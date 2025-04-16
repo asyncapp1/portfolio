@@ -63,15 +63,6 @@ const AboutImage = styled.div`
   overflow: hidden;
 `;
 
-const AboutInitials = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-`;
-
 const LogoImage = styled.img`
   width: 100%;
   height: 100%;

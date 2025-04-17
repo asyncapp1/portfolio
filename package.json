@@ -18,18 +18,15 @@
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
-    "serve": "^14.2.1",
     "styled-components": "^6.1.17",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:prod": "serve -s build",
-    "build": "NODE_OPTIONS=--max_old_space_size=2048 CI=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -48,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=16 <19"
   }
 }

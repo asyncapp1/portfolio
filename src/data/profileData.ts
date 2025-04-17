@@ -36,15 +36,15 @@ export const profileData: ProfileData = {
   technicalSkills: [
     {
       category: "Languages",
-      items: ["Dart", "JavaScript", "Python", "Java", "C", "C++"]
+      items: ["Dart", "Go","JavaScript", "Python", "Java",]
     },
     {
       category: "Developer Tools",
-      items: ["VS Code", "Android Studio", "Intellij"]
+      items: ["Android Studio","VS Code", "GoLand", "Intellij"]
     },
     {
       category: "Technologies/Frameworks",
-      items: ["Flutter", "Bloc", "Riverpod", "Provider", "GetX", "Linux", "GitHub", "NodeJS", "ExpressJS", "Git", "MongoDB", "DynamoDB", "serverless framework", "AWS lambda", "Firebase"]
+      items: ["Flutter", "Bloc", "Riverpod", "Provider", "GetX", "Linux","Go","Gin","GORM", "GitHub", "NodeJS", "ExpressJS", "Git", "MongoDB", "DynamoDB", "serverless framework", "AWS lambda", "Firebase"]
     }
   ],
   
@@ -74,9 +74,9 @@ export const profileData: ProfileData = {
       location: "Amsterdam-Netherlands",
       remote: true,
       description: [
-        "Here my role is Development of applications using Technologies: Flutter (Riverpod), Node.js, AWS (Cognito, Lambda, API Gateway, DynamoDB, S3 bucket)"
+        "Here my role is Development of applications using Technologies: Flutter (Riverpod), Go (Gin, GORM), AWS (Cognito, Lambda, API Gateway, DynamoDB, S3 bucket)"
       ],
-      technologies: "Flutter (Riverpod), Node.js, AWS"
+      technologies: "Flutter (Riverpod), Go( Gin, GORM), AWS"
     },
     {
       company: "Subspace",
@@ -86,9 +86,9 @@ export const profileData: ProfileData = {
       location: "Bengaluru",
       remote: true,
       description: [
-        "Here my role is Development of applications using Technologies: Flutter (Bloc), flutter-Animation, GraphQL API integration Node.js"
+        "Here my role is Development of applications using Technologies: Flutter (Bloc), flutter-Animation, GraphQL API integration with flutter"
       ],
-      technologies: "Flutter (Bloc), flutter-Animation, GraphQL, Node.js"
+      technologies: "Flutter (Bloc), flutter-Animation, GraphQL"
     },
     {
       company: "AsyncApp YouTube",
@@ -99,7 +99,7 @@ export const profileData: ProfileData = {
       description: [
         "Creating and publishing educational content in video format. Leading the development of new projects and documentation."
       ],
-      technologies: "Flutter, Node.js, AWS"
+      technologies: "Flutter, Go, Node.js, AWS"
     },
     {
       company: "GradClabs",
@@ -121,9 +121,9 @@ export const profileData: ProfileData = {
       location: "Delhi, India",
       remote: true,
       description: [
-        "Here my role was Focused on UI development. Assisted in the building and deployment of projects. using Flutter (Provider, GetX), Node.js"
+        "Here my role was Focused on UI development. Assisted in the building and deployment of projects. using Flutter (Provider, GetX),"
       ],
-      technologies: "Flutter (Provider, GetX), Node.js"
+      technologies: "Flutter (Provider, GetX)"
     }
   ],
   

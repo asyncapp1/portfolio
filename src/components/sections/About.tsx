@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Section from '../common/Section';
+import Button from '../common/Button';
+import Icon from '../common/Icon';
 import { colors, spacing, shadows } from '../../styles/theme';
 import { profileData } from '../../data/profileData';
 import aboutImage from '../../assets/images/about.png';
+import { FaDownload, FaFileAlt } from 'react-icons/fa';
 
 const AboutContainer = styled.div`
   display: grid;
@@ -172,6 +175,18 @@ const AboutCard = styled.div`
   }
 `;
 
+const DownloadButtonsContainer = styled.div`
+  display: flex;
+  gap: ${spacing.md};
+  margin-top: ${spacing.lg};
+  margin-bottom: ${spacing.md};
+  flex-wrap: wrap;
+  
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`;
+
 const About: React.FC = () => {
   return (
     <Section 
@@ -201,6 +216,15 @@ const About: React.FC = () => {
               Throughout my career, I've worked with various companies and clients, helping them build and improve their digital products. 
               I'm particularly interested in mobile application development, cloud technologies, and creating seamless user experiences.
             </Paragraph>
+            
+            <DownloadButtonsContainer>
+              <Button as="a" href={profileData.resume} target="_blank" rel="noopener noreferrer" size="small">
+                <Icon icon={FaDownload} style={{ marginRight: '8px' }} /> Download Resume
+              </Button>
+              <Button as="a" href={profileData.cv} target="_blank" rel="noopener noreferrer" variant="outlined" size="small">
+                <Icon icon={FaFileAlt} style={{ marginRight: '8px' }} /> Download CV
+              </Button>
+            </DownloadButtonsContainer>
           </motion.div>
           
           <motion.div

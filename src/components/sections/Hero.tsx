@@ -5,7 +5,7 @@ import { colors, spacing } from '../../styles/theme';
 import Button from '../common/Button';
 import Icon from '../common/Icon';
 import { profileData } from '../../data/profileData';
-import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope, FaDownload, FaFileAlt } from 'react-icons/fa';
 import logoImage from '../../assets/images/logo_first.png';
 
 const HeroContainer = styled.section`
@@ -78,7 +78,7 @@ const HeroImage = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 2px dashed ${colors.accent};
+    border: 2px dashed ${colors.primary};
     animation: rotate 30s linear infinite;
   }
   
@@ -130,7 +130,7 @@ const Title = styled.h1`
 const RoleText = styled.h2`
   font-size: 2rem;
   font-weight: 600;
-  color: ${colors.accent};
+  color: ${colors.primary};
   margin-bottom: ${spacing.md};
   display: flex;
   align-items: center;
@@ -158,10 +158,10 @@ const ButtonsContainer = styled.div`
   display: flex;
   gap: ${spacing.md};
   margin-bottom: ${spacing.lg};
+  flex-wrap: wrap;
   
   @media (max-width: 768px) {
     justify-content: center;
-    flex-wrap: wrap;
   }
 `;
 
@@ -220,6 +220,12 @@ const Hero: React.FC = () => {
               </Button>
               <Button as="a" href="#projects" variant="outlined">
                 View Projects
+              </Button>
+              <Button as="a" href={profileData.resume} target="_blank" rel="noopener noreferrer">
+                <Icon icon={FaDownload} style={{ marginRight: '8px' }} /> Resume
+              </Button>
+              <Button as="a" href={profileData.cv} target="_blank" rel="noopener noreferrer" variant="outlined" >
+                <Icon icon={FaFileAlt} style={{ marginRight: '8px' }} /> CV
               </Button>
             </ButtonsContainer>
             

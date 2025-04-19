@@ -4,44 +4,48 @@ import { colors, borderRadius, transitions } from '../../styles/theme';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outlined' | 'text';
 type ButtonSize = 'small' | 'medium' | 'large';
+type ButtonColor = 'primary' | 'secondary' | 'accent';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   fullWidth?: boolean;
+  color?: ButtonColor;
   as?: React.ElementType;
   to?: string;
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 const variants = {
-  primary: css`
-    background-color: ${colors.primary};
-    color: ${colors.white};
-    border: 2px solid ${colors.primary};
+  primary: css<{ color?: ButtonColor }>`
+    background-color: ${props => props.color ? colors[props.color] : colors.primary};
+    color: ${colors.background};
+    border: 2px solid ${props => props.color ? colors[props.color] : colors.primary};
     
     &:hover {
       background-color: transparent;
-      color: ${colors.primary};
+      color: ${props => props.color ? colors[props.color] : colors.primary};
     }
   `,
-  secondary: css`
-    background-color: ${colors.secondary};
+  secondary: css<{ color?: ButtonColor }>`
+    background-color: ${props => props.color ? colors[props.color] : colors.secondary};
     color: ${colors.white};
-    border: 2px solid ${colors.secondary};
+    border: 2px solid ${props => props.color ? colors[props.color] : colors.secondary};
     
     &:hover {
       background-color: transparent;
-      color: ${colors.secondary};
+      color: ${props => props.color ? colors[props.color] : colors.secondary};
     }
   `,
-  outlined: css`
+  outlined: css<{ color?: ButtonColor }>`
     background-color: transparent;
-    color: ${colors.primary};
-    border: 2px solid ${colors.primary};
+    color: ${props => props.color ? colors[props.color] : colors.primary};
+    border: 2px solid ${props => props.color ? colors[props.color] : colors.primary};
     
     &:hover {
-      background-color: ${colors.primary};
+      background-color: ${props => props.color ? colors[props.color] : colors.primary};
       color: ${colors.white};
     }
   `,

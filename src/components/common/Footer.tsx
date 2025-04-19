@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { colors, spacing } from '../../styles/theme';
-import { FaLinkedin, FaGithub, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload, FaFileAlt } from 'react-icons/fa';
 import { profileData } from '../../data/profileData';
 import Icon from './Icon';
 
@@ -57,6 +57,18 @@ const FooterLink = styled(Link)`
   color: ${colors.darkGrey};
   text-decoration: none;
   transition: color 0.2s ease;
+  
+  &:hover {
+    color: ${colors.primary};
+  }
+`;
+
+const ExternalLink = styled.a`
+  color: ${colors.darkGrey};
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
   
   &:hover {
     color: ${colors.primary};
@@ -148,6 +160,16 @@ const Footer: React.FC = () => {
             </FooterNavItem>
             <FooterNavItem>
               <FooterLink to="/#contact">Contact</FooterLink>
+            </FooterNavItem>
+            <FooterNavItem>
+              <ExternalLink href={profileData.resume} target="_blank" rel="noopener noreferrer">
+                <Icon icon={FaDownload} style={{ marginRight: '8px' }} /> Resume
+              </ExternalLink>
+            </FooterNavItem>
+            <FooterNavItem>
+              <ExternalLink href={profileData.cv} target="_blank" rel="noopener noreferrer">
+                <Icon icon={FaFileAlt} style={{ marginRight: '8px' }} /> CV
+              </ExternalLink>
             </FooterNavItem>
           </FooterNav>
         </FooterSection>

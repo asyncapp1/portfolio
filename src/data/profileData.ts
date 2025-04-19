@@ -2,23 +2,25 @@ import { ProfileData } from './types';
 
 export const profileData: ProfileData = {
   name: "NAVNEET PRAJAPATI",
-  location: "Azamgarh, Uttar Pradesh",
+  location: "Gurugram, Haryana",
   phone: "+91 7271088606",
   email: "navneetprajapati26@gmail.com",
   linkedin: "https://www.linkedin.com/in/navneetprajapati26/",
   github: "https://github.com/navneetprajapati26",
   youtube: "https://www.youtube.com/@asyncapp",
+  resume: "https://drive.google.com/file/d/1Xw-hPYZzP77D0EHOdA1P8Fej7cny0Jdc/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1osOOCtfIhHfsa8BBzlGmxmx8seuQ-GLc/view?usp=sharing",
   
   education: [
     {
       institution: "Rajkiya Engineering College Sonbhadra",
-      degree: "Bachelor of technology (Computer science)",
+      degree: "Bachelor of Technology (Computer Science)",
       duration: "07 2020 -- 07 2024",
       location: "Sonbhadra, India"
     },
     {
       institution: "SDS Intercollege Varanasi",
-      degree: "intermediate (PCM)",
+      degree: "Intermediate (PCM)",
       duration: "2018 -- 2020",
       location: "Varanasi, India"
     }
@@ -26,25 +28,32 @@ export const profileData: ProfileData = {
   
   coursework: [
     "Data Structures & Algorithms",
-    "Operating Systems",
-    "DBMS",
-    "OOPS Concept",
-    "Backend Development",
-    "Android Development"
+    "Mobile App Development",
+    "UI/UX Design Principles",
+    "Software Architecture",
+    "REST API Development",
+    "Cross-platform Development",
+    "State Management Patterns",
+    "Database Systems"
   ],
   
   technicalSkills: [
     {
       category: "Languages",
-      items: ["Dart", "Go","JavaScript", "Python", "Java",]
+      items: ["Dart", "Go", "JavaScript", "Python", "Java"]
     },
     {
       category: "Developer Tools",
-      items: ["Android Studio","VS Code", "GoLand", "Intellij"]
+      items: ["Android Studio", "VS Code", "GoLand", "Intellij"]
     },
     {
       category: "Technologies/Frameworks",
-      items: ["Flutter", "Bloc", "Riverpod", "Provider", "GetX", "Linux","Go","Gin","GORM", "GitHub", "NodeJS", "ExpressJS", "Git", "MongoDB", "DynamoDB", "serverless framework", "AWS lambda", "Firebase"]
+      items: [
+        "Flutter", "Bloc", "Riverpod", "Provider", "GetX", "Linux", "Go", "Gin", "GORM", 
+        "GitHub", "NodeJS", "ExpressJS", "Git", "MongoDB", "DynamoDB", "PostgreSQL", 
+        "MySQL", "SQLite", "Firebase", "serverless framework", "AWS lambda", "AWS (Cognito, API Gateway, S3)",
+        "GitHub Actions", "RESTful APIs", "GraphQL"
+      ]
     }
   ],
   
@@ -57,14 +66,14 @@ export const profileData: ProfileData = {
       location: "Gurugram",
       remote: false,
       description: [
-        "Promoted from intern to full-time role. Achievements include:",
-        "Designed code architecture for iOS Flutter projects implementing Riverpod with clean architecture",
-        "Developed centralized cookie management system for API interactions using Dio",
-        "Implemented background API calling system and background processing infrastructure",
-        "Built common API calling framework with standardized response handling and force update functionality",
-        "Successfully delivered purchase module for iOS and implemented numerous UI components with state management"
+        "Promoted from intern to full-time role based on exceptional Flutter development performance",
+        "Designed and implemented iOS Flutter application architecture using Riverpod with clean architecture principles (Repository Pattern, Use Cases, and Domain-Driven Design)",
+        "Developed a robust centralized cookie management system for API interactions using Dio, improving authentication workflows and security",
+        "Created background API calling system with retry mechanisms and offline-first capabilities",
+        "Built reusable UI components with complex state management, improving development velocity by 30%",
+        "Implemented complex purchase flow with proper state handling and error recovery mechanisms"
       ],
-      technologies: "Flutter (Riverpod), clean architecture, Dio, iOS development"
+      technologies: "Flutter, Riverpod, Clean Architecture, Dio, iOS Development, REST APIs"
     },
     {
       company: "Visario",
@@ -74,9 +83,13 @@ export const profileData: ProfileData = {
       location: "Amsterdam-Netherlands",
       remote: true,
       description: [
-        "Here my role is Development of applications using Technologies: Flutter (Riverpod), Go (Gin, GORM), AWS (Cognito, Lambda, API Gateway, DynamoDB, S3 bucket)"
+        "Designed and developed full-stack visa application platform with Flutter frontend and Go backend",
+        "Implemented complex multi-step user onboarding process with form validation, image uploads, and document processing",
+        "Built responsive and adaptive UI components that work seamlessly across mobile, tablet, and web",
+        "Integrated Razorpay payment gateway with secure transaction handling and receipt generation",
+        "Utilized Flutter's Riverpod for state management, ensuring clean separation of UI and business logic"
       ],
-      technologies: "Flutter, Riverpod, Go, Gin, GORM, AWS"
+      technologies: "Flutter (Riverpod), Go, AWS (Cognito, Lambda, API Gateway, DynamoDB, S3), RESTful APIs"
     },
     {
       company: "Subspace",
@@ -86,129 +99,145 @@ export const profileData: ProfileData = {
       location: "Bengaluru",
       remote: true,
       description: [
-        "Here my role is Development of applications using Technologies: Flutter (Bloc), flutter-Animation, GraphQL API integration with flutter"
+        "Developed Flutter applications with Bloc pattern for predictable state management",
+        "Created complex UI animations and transitions for enhanced user experience",
+        "Implemented GraphQL API integration for efficient data fetching and real-time updates",
+        "Optimized app performance through widget rebuilding optimization and memory management"
       ],
-      technologies: "Flutter, Bloc, flutter-Animation, GraphQL"
+      technologies: "Flutter (Bloc), Flutter Animation, GraphQL, Node.js"
     },
     {
       company: "AsyncApp YouTube",
       link: "https://www.youtube.com/@asyncapp",
-      position: "Educator",
+      position: "Flutter and Full-Stack Educator",
       duration: "Feb 2023 - Present",
-      location: "My own YouTube chanel",
+      location: "YouTube Channel",
+      remote: true,
       description: [
-        "Creating and publishing educational content in video format. Leading the development of new projects and documentation."
+        "Create educational content focused on Flutter development, state management, and app architecture",
+        "Produce tutorial series on integrating Flutter with backend technologies like Go and Node.js",
+        "Demonstrate implementation of advanced Flutter features including animations, custom painters, and complex widgets",
+        "Share knowledge on deployment strategies and cloud integration with AWS and Firebase"
       ],
-      technologies: "Flutter, Go, Node.js, AWS"
+      technologies: "Flutter, Go, Node.js, AWS, Firebase"
     },
     {
       company: "GradClabs",
       link: "https://gradclubs.app/",
-      position: "Internship",
+      position: "Flutter Developer Internship",
       duration: "Jun 2023 - Aug 2023",
-      location: "Canda",
+      location: "Canada",
       remote: true,
       description: [
-        "Here my role was developed a website using Flutter. Implemented a full Chatbot system and WhatsApp automation used technology: Flutter (Provider), Node.js, AWS (ES2 Instance), Firebase (functions, hosting, storage)."
+        "Developed responsive Flutter web application with adaptive layouts for different screen sizes",
+        "Implemented complete chatbot system with natural language processing integration",
+        "Created WhatsApp automation system for user notifications and engagement",
+        "Built and deployed application using Firebase for authentication, database, and hosting"
       ],
-      technologies: "Flutter, Provider, Node.js, AWS, Firebase"
+      technologies: "Flutter (Provider), Node.js, AWS (EC2), Firebase (Functions, Hosting, Storage)"
     },
     {
       company: "Sofodel",
       link: "https://www.sofodel.com/",
-      position: "Internship",
+      position: "Flutter Developer Internship",
       duration: "Oct 2022 - Jun 2023",
       location: "Delhi, India",
       remote: true,
       description: [
-        "Here my role was Focused on UI development. Assisted in the building and deployment of projects. using Flutter (Provider, GetX),"
+        "Designed and implemented UI components following material design guidelines",
+        "Built responsive layouts that adapt to different screen sizes and orientations",
+        "Collaborated in cross-functional teams for application development and deployment",
+        "Utilized Provider and GetX state management solutions for various applications"
       ],
-      technologies: "Flutter, Provider, GetX"
+      technologies: "Flutter (Provider, GetX), Node.js, RESTful APIs"
     }
   ],
   
   projects: [
+    {
+      title: "Parcha (Invoice & Inventory System)",
+      link: "https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app",
+      duration: "12 2024 – 01 2025",
+      technologies: "Flutter (Riverpod), SQLite, IndexDB",
+      description: [
+        "Built cross-platform solution using Flutter that works seamlessly across desktop, mobile, and web platforms",
+        "Implemented complex state management using Riverpod for predictable application behavior",
+        "Developed offline-first architecture with SQLite on mobile and IndexDB on web for local data persistence",
+        "Created custom PDF invoice generation with integrated UPI payment QR codes",
+        "Built responsive UI with multiple themes and layout adaptations for different device sizes"
+      ],
+      liveLink: "https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app"
+    },
+    {
+      title: "Restaurant Management Suite",
+      link: "",
+      duration: "Present",
+      technologies: "Go (GIN, GORM), PostgreSQL, Flutter, React",
+      description: [
+        "Developing Flutter admin dashboard with complex UI components and real-time data visualization",
+        "Implementing advanced state management for multi-outlet management with Riverpod",
+        "Building responsive UIs that adapt to mobile, tablet, and desktop form factors",
+        "Creating custom Flutter widgets for tableside ordering and menu management",
+        "Integrating with RESTful API backend built with Go for real-time data synchronization"
+      ]
+    },
     {
       title: "Utility Flutter for Pub.dev",
       link: "https://pub.dev/packages/utility_flutter",
       duration: "10 2023",
       technologies: "Flutter, Dart, HTTP, Shared Preferences",
       description: [
-        "Open-source package simplifying HTTP and shared preferences operations in Flutter. Features include default headers, request timeouts, standardized error responses, and local variable storage."
+        "Published Flutter package with over 500+ downloads on pub.dev used by developers worldwide",
+        "Implemented simplified HTTP client with standardized request/response handling and retry mechanisms",
+        "Created easy-to-use shared preferences wrapper for local storage with type safety",
+        "Wrote comprehensive documentation and examples for developer adoption"
       ],
       liveLink: "https://pub.dev/packages/utility_flutter"
     },
     {
-      title: "Digital Painting Canvas and Whiteboard",
+      title: "Shyampatt (Painting Canvas and Whiteboard)",
       link: "https://play.google.com/store/apps/details?id=com.mylight.shyampatt",
       duration: "09 2023",
       technologies: "Flutter, Riverpod, Hive DB, CustomPainter",
       description: [
-        "Digital whiteboard for Android TV/Windows PC. Drawing platform for Android/iOS with multiple drawing saves and children's templates."
+        "Developed cross-platform drawing application with Flutter's CustomPainter for real-time drawing capabilities",
+        "Implemented platform-specific code for Android TV, Windows PC, and mobile devices",
+        "Used Riverpod for state management of complex drawing state (strokes, colors, brush sizes)",
+        "Created persistent storage system using Hive DB for saving and loading drawings"
       ],
       liveLink: "https://play.google.com/store/apps/details?id=com.mylight.shyampatt"
-    },
-    {
-      title: "Bill Generator Application",
-      link: "https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app",
-      duration: "08 2023",
-      technologies: "Provider, Hive DB",
-      description: [
-        "Manages shop info and bills (create, update, delete, share, PDF). Integrated customer database and archived bill access."
-      ],
-      liveLink: "https://play.google.com/store/apps/details?id=com.myligh.parcha.parcha_app"
-    },
-    {
-      title: "Full-Stack Blogging Platform",
-      link: "https://youtu.be/aWNm1VBFQII?si=b1k3bZqeIRd4xkF6",
-      duration: "08 2023",
-      technologies: "Flutter, Node.js",
-      description: [
-        "User authentication and blog management (post, edit, delete). Cross-user blog visibility. Accompanied by instructional YouTube series."
-      ]
     },
     {
       title: "File Size Reducer",
       link: "https://github.com/navneetprajapati26/file_reducer",
       duration: "09 2023",
-      technologies: "BLoC, Go Routes, Express.js",
+      technologies: "Flutter, BLoC, Go Routes, Express.js",
       description: [
-        "Reduces file quality as per user preference and retrieves files post-compression."
-      ]
-    },
-    {
-      title: "Real-Time Chatting Application",
-      link: "https://github.com/navneetprajapati26/chat_app",
-      duration: "07 2023",
-      technologies: "GetX, Socket.io",
-      description: [
-        "Supports real-time group chats with user-specific nicknames."
+        "Built Flutter application with BLoC pattern for predictable state management",
+        "Implemented Go Routes for declarative routing and deep linking support",
+        "Created custom UI for file upload, quality selection, and download interfaces",
+        "Integrated with Express.js backend for file processing and compression"
       ]
     },
     {
       title: "Dynamic Wallpaper Application",
       link: "https://play.google.com/store/apps/details?id=com.mylight.wallApp",
       duration: "04 2023",
-      technologies: "Provider, Wallpaper API",
+      technologies: "Flutter, Provider, REST API Integration",
       description: [
-        "Features extensive wallpaper browsing, direct setting, and search functionality."
-      ]
-    },
-    {
-      title: "Classic Snake Game",
-      link: "https://play.google.com/store/apps/details?id=com.mylight.snake_game",
-      duration: "11 2022",
-      technologies: "Flutter",
-      description: [
-        "Classic snake game with real-time score and high-score tracking."
-      ]
+        "Created Flutter application with Provider state management for wallpaper browsing and setting",
+        "Implemented platform-specific code for setting wallpapers on Android devices",
+        "Built custom grid layout with lazy loading and image caching for optimal performance",
+        "Integrated with REST API for fetching wallpaper collections with search functionality"
+      ],
+      liveLink: "https://play.google.com/store/apps/details?id=com.mylight.wallApp"
     }
   ],
   
   extracurricular: [
     {
-      title: "Team Leadership",
-      description: "I am class representative of my branch in my college, and also I am head of skit department in our college."
+      title: "Class Representative",
+      description: "Served as Class Representative for Computer Science branch in Rajkiya Engineering College, coordinating between students and faculty. Led skit department for college cultural events, demonstrating teamwork and creative direction."
     }
   ]
-}; 
+};

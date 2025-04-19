@@ -48,6 +48,8 @@ export interface ProfileData {
   linkedin: string;
   github: string;
   youtube: string;
+  resume:string;
+  cv:string;
   education: Education[];
   coursework: string[];
   technicalSkills: TechnicalSkill[];

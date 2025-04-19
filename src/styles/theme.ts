@@ -1,5 +1,5 @@
 export const colors = {
-  primary: '#6C84F2',      // Lighter blue for dark theme
+  primary: '#FFA725',      // Lighter blue for dark theme
   secondary: '#4BEA1D',    // Brighter green for dark theme
   accent: '#17A589',       // Brighter teal accent for dark theme
   tagAccent: '#00FF85',    // Brighter tag green for dark theme

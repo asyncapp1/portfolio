@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
     transition: color 0.2s ease-in-out;
     
     &:hover {
-      color: ${colors.accent};
+      color: ${colors.secondary};
     }
   }
 
@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
     margin-bottom: 1rem;
     font-weight: 600;
     line-height: 1.2;
-    color: ${colors.dark};
+    color: ${colors.white};
   }
 
   h1 {
@@ -74,11 +74,13 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     margin-bottom: 1rem;
+    color: ${colors.dark};
   }
 
   ul, ol {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
+    color: ${colors.dark};
   }
 
   img {
@@ -99,6 +101,7 @@ const GlobalStyles = createGlobalStyle`
 
   section {
     padding: 4rem 0;
+    background-color: ${colors.background};
   }
 
   .container {

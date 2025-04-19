@@ -7,8 +7,8 @@ import { profileData } from '../../data/profileData';
 import Icon from './Icon';
 
 const FooterContainer = styled.footer`
-  background-color: ${colors.dark};
-  color: ${colors.white};
+  background-color: ${colors.lightBackground};
+  color: ${colors.dark};
   padding: ${spacing.xl} 0;
 `;
 
@@ -54,7 +54,7 @@ const FooterNavItem = styled.li`
 `;
 
 const FooterLink = styled(Link)`
-  color: ${colors.lightGrey};
+  color: ${colors.darkGrey};
   text-decoration: none;
   transition: color 0.2s ease;
   
@@ -70,7 +70,7 @@ const SocialLinks = styled.div`
 `;
 
 const SocialLink = styled.a`
-  color: ${colors.lightGrey};
+  color: ${colors.darkGrey};
   font-size: 1.2rem;
   transition: color 0.2s ease;
   
@@ -83,7 +83,7 @@ const ContactItem = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: ${spacing.sm};
-  color: ${colors.lightGrey};
+  color: ${colors.darkGrey};
   
   svg {
     margin-right: ${spacing.sm};
@@ -96,7 +96,7 @@ const CopyRight = styled.div`
   margin-top: ${spacing.xl};
   padding-top: ${spacing.md};
   border-top: 1px solid ${colors.darkGrey};
-  color: ${colors.lightGrey};
+  color: ${colors.darkGrey};
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
       <FooterContent>
         <FooterSection>
           <FooterTitle>{profileData.name}</FooterTitle>
-          <p style={{ color: colors.lightGrey, marginBottom: spacing.md }}>
+          <p style={{ color: colors.dark, marginBottom: spacing.md }}>
             A Full Stack Developer specializing in {profileData.technicalSkills.find(skill => skill.category === "Technologies/Frameworks")?.items.slice(0, 3).join(", ")} technologies.
           </p>
           <SocialLinks>

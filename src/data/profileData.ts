@@ -76,7 +76,7 @@ export const profileData: ProfileData = {
       description: [
         "Here my role is Development of applications using Technologies: Flutter (Riverpod), Go (Gin, GORM), AWS (Cognito, Lambda, API Gateway, DynamoDB, S3 bucket)"
       ],
-      technologies: "Flutter (Riverpod), Go( Gin, GORM), AWS"
+      technologies: "Flutter, Riverpod, Go, Gin, GORM, AWS"
     },
     {
       company: "Subspace",
@@ -88,7 +88,7 @@ export const profileData: ProfileData = {
       description: [
         "Here my role is Development of applications using Technologies: Flutter (Bloc), flutter-Animation, GraphQL API integration with flutter"
       ],
-      technologies: "Flutter (Bloc), flutter-Animation, GraphQL"
+      technologies: "Flutter, Bloc, flutter-Animation, GraphQL"
     },
     {
       company: "AsyncApp YouTube",
@@ -111,7 +111,7 @@ export const profileData: ProfileData = {
       description: [
         "Here my role was developed a website using Flutter. Implemented a full Chatbot system and WhatsApp automation used technology: Flutter (Provider), Node.js, AWS (ES2 Instance), Firebase (functions, hosting, storage)."
       ],
-      technologies: "Flutter (Provider), Node.js, AWS, Firebase"
+      technologies: "Flutter, Provider, Node.js, AWS, Firebase"
     },
     {
       company: "Sofodel",
@@ -123,7 +123,7 @@ export const profileData: ProfileData = {
       description: [
         "Here my role was Focused on UI development. Assisted in the building and deployment of projects. using Flutter (Provider, GetX),"
       ],
-      technologies: "Flutter (Provider, GetX)"
+      technologies: "Flutter, Provider, GetX"
     }
   ],
   

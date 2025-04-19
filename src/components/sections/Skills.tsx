@@ -17,6 +17,7 @@ const SkillsContainer = styled.div`
 `;
 
 const CourseWorkContainer = styled.div`
+
   margin-bottom: ${spacing.xl};
 `;
 
@@ -49,7 +50,7 @@ const CourseWorkGrid = styled.div`
 `;
 
 const CourseItem = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.background};
   border-radius: ${borderRadius.md};
   padding: ${spacing.md};
   box-shadow: ${shadows.sm};
@@ -64,16 +65,28 @@ const CourseItem = styled.div`
 `;
 
 const SkillCard = styled.div`
-  background-color: ${colors.white};
-  border-radius: ${borderRadius.lg};
-  padding: ${spacing.lg};
-  box-shadow: ${shadows.sm};
+  background-color: ${colors.background};
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: ${shadows.md};
   height: 100%;
   transition: transform 0.3s ease;
   
   &:hover {
     transform: translateY(-5px);
-    box-shadow: ${shadows.md};
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: ${colors.white};
+    display: flex;
+    align-items: center;
+    
+    svg {
+      margin-right: 0.5rem;
+      color: ${colors.primary};
+    }
   }
 `;
 

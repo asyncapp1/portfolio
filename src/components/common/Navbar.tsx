@@ -11,7 +11,7 @@ const Header = styled.header<{ isScrolled: boolean }>`
   left: 0;
   width: 100%;
   z-index: ${zIndices.navigation};
-  background-color: ${props => props.isScrolled ? colors.white : 'transparent'};
+  background-color: ${props => props.isScrolled ? colors.lightBackground : 'transparent'};
   transition: ${transitions.default};
   box-shadow: ${props => props.isScrolled ? shadows.md : 'none'};
   padding: ${props => props.isScrolled ? '0.8rem 0' : '1.5rem 0'};
@@ -52,7 +52,7 @@ const NavList = styled.ul<{ isOpen: boolean }>`
     height: 100vh;
     width: 250px;
     flex-direction: column;
-    background-color: ${colors.white};
+    background-color: ${colors.background};
     box-shadow: ${shadows.lg};
     padding: 2rem;
     transform: ${props => props.isOpen ? 'translateX(0)' : 'translateX(100%)'};

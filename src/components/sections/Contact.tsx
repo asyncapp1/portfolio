@@ -21,7 +21,7 @@ const ContactContainer = styled.div`
 const ContactInfo = styled.div``;
 
 const ContactForm = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.lightBackground};
   padding: ${spacing.lg};
   border-radius: ${borderRadius.lg};
   box-shadow: ${shadows.md};
@@ -163,6 +163,13 @@ const FormTextarea = styled.textarea`
     outline: none;
     border-color: ${colors.primary};
   }
+`;
+
+const ContactFormCard = styled.div`
+  background-color: ${colors.lightBackground};
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: ${shadows.md};
 `;
 
 const Contact: React.FC = () => {

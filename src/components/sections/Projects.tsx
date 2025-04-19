@@ -19,10 +19,10 @@ const ProjectsContainer = styled.div`
 `;
 
 const ProjectCard = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.background};
   border-radius: ${borderRadius.lg};
   overflow: hidden;
-  box-shadow: ${shadows.sm};
+  box-shadow: ${shadows.md};
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   display: flex;

@@ -99,17 +99,20 @@ const EducationTitle = styled.h3`
 `;
 
 const EducationCard = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.lightBackground};
+  padding: 2rem;
   border-radius: 8px;
-  padding: ${spacing.md};
-  margin-bottom: ${spacing.md};
-  box-shadow: ${shadows.sm};
-  border-left: 4px solid ${colors.primary};
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: ${shadows.md};
+  box-shadow: ${shadows.md};
+  margin-top: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+    color: ${colors.white};
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: ${colors.dark};
   }
 `;
 
@@ -151,6 +154,24 @@ const Location = styled.p`
   align-items: center;
 `;
 
+const AboutCard = styled.div`
+  background-color: ${colors.lightBackground};
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: ${shadows.md};
+  margin-top: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+    color: ${colors.white};
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: ${colors.dark};
+  }
+`;
+
 const About: React.FC = () => {
   return (
     <Section 
@@ -167,7 +188,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <Paragraph>
-              Hello! I'm Navneet Prajapati, a Full Stack Developer with a strong focus on Flutter, Node.js, and AWS technologies. 
+              Hello! I'm Navneet Prajapati, a Full Stack Developer with a strong focus on Flutter, GoLang technologies. 
               I have a passion for creating efficient, user-friendly applications and websites that provide an excellent user experience.
             </Paragraph>
             

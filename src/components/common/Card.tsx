@@ -12,17 +12,17 @@ interface CardProps {
 
 const variants = {
   default: css`
-    background-color: ${colors.white};
+    background-color: ${colors.lightBackground};
     border: none;
     box-shadow: ${shadows.sm};
   `,
   outlined: css`
     background-color: transparent;
-    border: 1px solid ${colors.lightGrey};
+    border: 1px solid ${colors.darkGrey};
     box-shadow: none;
   `,
   elevated: css`
-    background-color: ${colors.white};
+    background-color: ${colors.lightBackground};
     border: none;
     box-shadow: ${shadows.md};
   `,

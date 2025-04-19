@@ -1,14 +1,15 @@
 export const colors = {
-  primary: '#0E5484',      // cvblue from resume
-  secondary: '#3BD80D',    // cvgreen from resume
-  accent: '#0F4539',       // darkcolor from resume
-  tagAccent: '#00E278',    // taggreen from resume
-  dark: '#130810',         // black from resume 
-  darkGrey: '#2E2E2E',     // SlateGrey from resume
-  lightGrey: '#666666',    // LightGrey from resume
-  white: '#FFFFFF',
-  background: '#F9FAFB',
-  lightBackground: '#F5F7F9',
+  primary: '#6C84F2',      // Lighter blue for dark theme
+  secondary: '#4BEA1D',    // Brighter green for dark theme
+  accent: '#17A589',       // Brighter teal accent for dark theme
+  tagAccent: '#00FF85',    // Brighter tag green for dark theme
+  dark: '#E2E2E2',         // Light color for text (formerly dark)
+  darkGrey: '#CCCCCC',     // Lighter grey for text
+  lightGrey: '#A0A0A0',    // Medium grey for less important text
+  white: '#FFFFFF',        // Still white
+  background: '#121212',   // Dark background
+  lightBackground: '#1E1E1E', // Slightly lighter dark background
+  logoBackground: '#A54941'  // Slightly brighter logo background
 };
 
 export const fontSizes = {

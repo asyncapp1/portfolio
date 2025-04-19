@@ -65,7 +65,7 @@ const HeroImage = styled.div`
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background-color: ${colors.primary};
+  background-color: ${colors.background};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,7 @@ const InitialsCircle = styled.div`
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  background-color: ${colors.white};
+  background-color: ${colors.lightBackground};
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -205,8 +205,7 @@ const Hero: React.FC = () => {
             <Title>{profileData.name}</Title>
             <RoleText>Full Stack Developer</RoleText>
             <Description>
-              Passionate and experienced developer specializing in Flutter, Node.js and 
-              AWS technologies. Crafting beautiful mobile applications and robust backend services.
+              Passionate and experienced developer specializing in Flutter, GoLang technologies. Crafting beautiful mobile applications and robust backend services.
             </Description>
           </motion.div>
           

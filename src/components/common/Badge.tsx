@@ -15,7 +15,7 @@ interface BadgeProps {
 const variants = {
   primary: css`
     background-color: ${colors.primary};
-    color: ${colors.white};
+    color: ${colors.background};
   `,
   secondary: css`
     background-color: ${colors.secondary};
@@ -23,7 +23,7 @@ const variants = {
   `,
   success: css`
     background-color: ${colors.tagAccent};
-    color: ${colors.dark};
+    color: ${colors.background};
   `,
   warning: css`
     background-color: #F9A825;
@@ -31,7 +31,7 @@ const variants = {
   `,
   info: css`
     background-color: #29B6F6;
-    color: ${colors.white};
+    color: ${colors.background};
   `,
   dark: css`
     background-color: ${colors.darkGrey};

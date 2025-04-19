@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Section from '../common/Section';
 import Card from '../common/Card';
 import Badge from '../common/Badge';
-import { colors, spacing, shadows } from '../../styles/theme';
+import { colors, spacing, shadows, borderRadius } from '../../styles/theme';
 import { profileData } from '../../data/profileData';
 import { FaExternalLinkAlt, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa';
 import Icon from '../common/Icon';
@@ -15,13 +15,18 @@ const ExperienceContainer = styled.div`
   gap: ${spacing.lg};
 `;
 
-const ExperienceCard = styled(Card)`
+const ExperienceCard = styled.div`
+  background-color: ${colors.lightBackground};
+  border-radius: ${borderRadius.lg};
+  padding: ${spacing.lg};
+  box-shadow: ${shadows.md};
+  margin-bottom: ${spacing.lg};
   border-left: 4px solid ${colors.primary};
   transition: transform 0.3s ease;
   
   &:hover {
     transform: translateY(-5px);
-    box-shadow: ${shadows.md};
+    box-shadow: ${shadows.lg};
   }
 `;
 
@@ -43,7 +48,7 @@ const CompanyInfo = styled.div`
 
 const CompanyName = styled.h3`
   font-size: 1.25rem;
-  color: ${colors.dark};
+  color: ${colors.white};
   margin: 0 0 ${spacing.xs} 0;
   display: flex;
   align-items: center;
@@ -62,7 +67,7 @@ const ExternalLink = styled.a`
 
 const PositionTitle = styled.h4`
   font-size: 1.1rem;
-  color: ${colors.darkGrey};
+  color: ${colors.dark};
   margin: 0;
   font-weight: 500;
 `;
@@ -96,7 +101,7 @@ const Location = styled.div`
 
 const RemoteTag = styled.span`
   background-color: ${colors.tagAccent};
-  color: ${colors.dark};
+  color: ${colors.background};
   font-size: 0.75rem;
   font-weight: 500;
   padding: 2px 8px;
@@ -122,7 +127,7 @@ const DescriptionList = styled.ul`
 
 const DescriptionItem = styled.li`
   margin-bottom: ${spacing.xs};
-  color: ${colors.lightGrey};
+  color: ${colors.dark};
   font-size: 0.95rem;
   line-height: 1.6;
 `;
